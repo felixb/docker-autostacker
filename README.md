@@ -11,6 +11,7 @@ docker run \
     -v "${PWD}:/workdir:ro" \         # <-- this mounts your current directory inside the container's work dir
     -v "${HOME}/.aws:/.aws:ro" \      # <-- this mounts your aws credentials inside the container's home dir
     -e AWS_PROFILE=some-aws-profile \ # <-- choose your aws profile
+    felixb/autostacker \
     update \                          # <-- run any autostacker24 command
         --stack some-stack \
         --template some-template.yaml
