@@ -16,3 +16,19 @@ docker run \
         --stack some-stack \
         --template some-template.yaml
 ```
+
+You might want to add the following function to your `.bashrc` or similar to allow even easier usage:
+
+```bash
+function autostacker() {
+    docker run \
+        --rm \
+        -v "${PWD}:/workdir:ro" \
+        -v "${HOME}/.aws:/.aws:ro" \
+        -e "AWS_PROFILE=${AWS_PROFILE}" \
+        -e "AWS_REGION=${AWS_REGION}" \
+        felixb/autostacker \
+        "${@}"
+}
+```
+
