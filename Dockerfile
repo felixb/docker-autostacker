@@ -4,7 +4,7 @@ ENTRYPOINT ["/usr/bin/autostacker24"]
 WORKDIR /workdir
 
 ENV \
-    AUTOSTACKER_VERSION=2.8.1
+    AUTOSTACKER_VERSION=2.8.3
 
 RUN apk add --no-cache ruby ruby-json
 RUN gem install \
