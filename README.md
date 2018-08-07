@@ -1,6 +1,6 @@
 # docker-autostacker
 
-Run [autostacker24](https://github.com/AutoScout24/autostacker24) w/o installing ruby on your system.
+Run [autostacker24](https://github.com/Scout24/autostacker24) w/o installing ruby on your system.
 
 ## Usage
 
